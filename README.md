@@ -1,2 +1,2 @@
-# dotfiles_ubuntu
-dotfiles 
+# dotfiles
+- Learning about dofiles.
