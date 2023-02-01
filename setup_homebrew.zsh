@@ -2,6 +2,14 @@
 
 echo "\n<<< Starting Homebrew Setup >>>\n"
 
+if exists zsh; then
+    echo "your OS is in zsh mode, skipping zsh setup"
+else
+    echo "Installing zsh for your OS"
+    brew install zsh
+fi
+
+
 if exists brew; then 
     echo "brew exists, skipping install"
 else
