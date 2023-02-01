@@ -1,4 +1,4 @@
-
+# MY CUSTOM CODE
 echo 'running'
 # Enable Powerlevel10k instant prompt.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
@@ -7,8 +7,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/jinheehan/.zprofile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -32,14 +30,31 @@ source /etc/zsh_command_not_found
 #   export EDITOR='mvim'
 # fi
 
-# Syntax highlighting for men pages using bat
- export MANPAGER="sh -c 'col -bx | bat -l man -p'"
- export HOMEBREW_CASK_OPTS="--no-quarantine"
-# Create Aliases
+# Set Variables
+export HOMEBREW_CASK_OPTS="--no-quarantine"
+export NULLCMD=bat
+export N_PREFIX="$HOME/.n"
+export PREFIX="$N_PREFIX" 
+
+ 
+#[[ -z $HISTFILE ]] && HISTFILE ="$HOME/.zsh-history"
+# HISTSIZE=2000
+# SAVEHIST=1000
+# setopt histNoStore
+# setopt extended History
+ 
+ 
+ # History DUplication Options
+ setopt histFindNoDups
+ setopt histSaveNoDups
+ 
+# CREATE ALIASES
 # alias ls='ls -lAFh'
 alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
-
+alias trail='<<<${(F)path}'
+alias rm=trash
+alias man=batman
 
 # Customize Prompt(s)
 ## PROMPT='

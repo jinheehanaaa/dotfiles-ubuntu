@@ -1,3 +1,4 @@
+tap "eth-p/software"
 tap "homebrew/bundle"
 tap "homebrew/core"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -12,3 +13,5 @@ brew "httpie"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# Bash scripts that integrate bat with various command-line tools
+brew "eth-p/software/bat-extras"
