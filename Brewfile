@@ -9,6 +9,8 @@ brew "exa"
 brew "gcc"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Free (GNU) replacement for the Pico text editor
+brew "nano"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
