@@ -2,7 +2,14 @@
 
 echo "\n<<< Starting Homebrew Setup >>>\n"
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+if exists brew; then 
+    echo "brew exists, skipping install"
+else
+  echo "brew dosn't exists, continuing with install"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+fi
+
+
 
 # Snap (Application)
 sudo snap install code
