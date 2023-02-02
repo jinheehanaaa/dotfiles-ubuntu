@@ -30,3 +30,5 @@ config/monitors.xml~
 config/user-dirs.dirs
 
 config/user-dirs.locale
+
+zshrc.save

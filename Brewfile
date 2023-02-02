@@ -13,6 +13,8 @@ brew "httpie"
 brew "less"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
+# UNIX shell (command interpreter)
+brew "zsh"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
