@@ -53,10 +53,11 @@ alias bbd= 'brew bundle dump --force --describe'
 alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
 alias bbd='brew bundle dump --force --describe'
+alias trail='<<<${(F)path}'
 
 # Customize Prompt(s)
-## PROMPT='
-## %1~ %L %# '
+PROMPT='
+ %1~ %L %# '
 RPROMPT='%*'
 
 # Write Handy Functions
