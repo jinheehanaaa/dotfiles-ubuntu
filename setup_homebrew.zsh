@@ -34,3 +34,4 @@ brew install exa
 brew install httpie
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
+brew install golang
