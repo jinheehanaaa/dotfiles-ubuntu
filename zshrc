@@ -52,7 +52,10 @@ export PREFIX="$N_PREFIX"
 alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
 alias bbd='brew bundle dump --force --describe'
-alias trail='bat<<<${(F)path}'
+alias trail='bat<<<${(F)path}' 
+# trash-cli
+alias rm=trash 
+
 
 # Customize Prompt(s)
 PROMPT='
