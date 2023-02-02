@@ -11,6 +11,8 @@ brew "gcc"
 brew "httpie"
 # Pager program similar to more
 brew "less"
+# Node version management
+brew "n"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # UNIX shell (command interpreter)

@@ -35,8 +35,7 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 export NULLCMD=bat
 export N_PREFIX="$HOME/.n"
 export PREFIX="$N_PREFIX" 
-alias bbd= 'brew bundle dump --force --describe'
- 
+
 #[[ -z $HISTFILE ]] && HISTFILE ="$HOME/.zsh-history"
 # HISTSIZE=2000
 # SAVEHIST=1000
@@ -44,7 +43,7 @@ alias bbd= 'brew bundle dump --force --describe'
 # setopt extended History
  
  
- # History DUplication Options
+# History DUplication Options
  setopt histFindNoDups
  setopt histSaveNoDups
  
@@ -59,6 +58,12 @@ alias trail='bat<<<${(F)path}'
 PROMPT='
  %1~ %L %# '
 RPROMPT='%*'
+
+
+# Add Location to $PATH Vartiable
+# Add VSCode
+export PATH="$PATH:/snap/bin"
+export PATH="$PATH:$N_PREFIX/bin"
 
 # Write Handy Functions
 function mkcd() {
