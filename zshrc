@@ -64,9 +64,10 @@ RPROMPT='%*'
 
 
 # Add Location to $PATH Vartiable
-# Add VSCode
-export PATH="$PATH:/snap/bin"
-export PATH="$PATH:$N_PREFIX/bin"
+export PATH="$N_PREFIX/bin:$PATH"
+
+export PATH="$PATH:/snap/bin" # Add VSCode
+
 
 # Write Handy Functions
 function mkcd() {

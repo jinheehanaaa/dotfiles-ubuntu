@@ -12,16 +12,16 @@ else
 fi
 
 # Install Global NPM Packages
-sudo npm install --global firebase-tools
-sudo npm install --global @angular/cli
-sudo npm install --global @ionic/cli
-sudo npm install --global typescript
-sudo npm install --global json-server
-sudo npm install --global http-server
-sudo npm install --global trash-cli
+npm install --global firebase-tools
+npm install --global @angular/cli
+npm install --global @ionic/cli
+npm install --global typescript
+npm install --global json-server
+npm install --global http-server
+npm install --global trash-cli
 
 echo "Global NPM Packages Installed:"
-sudo npm list --global --depth=0
+npm list --global --depth=0
 
 
 

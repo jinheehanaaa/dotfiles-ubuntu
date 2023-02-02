@@ -25,7 +25,7 @@ sudo snap install gitkraken --classic
 
 # FOR MACOS ONLY
 # Brew (Package) 
-# brew bundle --verbose
+brew bundle --verbose
 
 # FOR UBUNTU ONLY
 brew install bat

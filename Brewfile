@@ -7,6 +7,8 @@ brew "bat"
 brew "exa"
 # GNU compiler collection
 brew "gcc"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Pager program similar to more
@@ -15,6 +17,10 @@ brew "less"
 brew "n"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
+# Platform built on V8 to build network applications
+brew "node"
+# JavaScript package manager
+brew "yarn"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Fish-like fast/unobtrusive autosuggestions for zsh
