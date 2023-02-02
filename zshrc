@@ -35,7 +35,7 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 export NULLCMD=bat
 export N_PREFIX="$HOME/.n"
 export PREFIX="$N_PREFIX" 
-
+alias bbd= 'brew bundle dump --force --describe'
  
 #[[ -z $HISTFILE ]] && HISTFILE ="$HOME/.zsh-history"
 # HISTSIZE=2000
@@ -52,9 +52,7 @@ export PREFIX="$N_PREFIX"
 # alias ls='ls -lAFh'
 alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
-alias trail='<<<${(F)path}'
-alias rm=trash
-alias man=batman
+alias bbd='brew bundle dump --force --describe'
 
 # Customize Prompt(s)
 ## PROMPT='
