@@ -1,6 +1,6 @@
 # MY CUSTOM CODE
 echo 'Hello from .zshrc'
-# Enable Powerlevel10k instant prompt. (@the beginning of zshrc)
+# Enable Powerlevel10k instant prompt.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
  fi
@@ -16,6 +16,7 @@ source /home/jinheehan/.dotfiles/zprofile
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /home/jinheehan/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -34,7 +35,8 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 export NULLCMD=bat
 export N_PREFIX="$HOME/.n"
 export PREFIX="$N_PREFIX" 
-
+alias bbd= 'brew bundle dump --force --describe'
+ 
 #[[ -z $HISTFILE ]] && HISTFILE ="$HOME/.zsh-history"
 # HISTSIZE=2000
 # SAVEHIST=1000
@@ -42,7 +44,7 @@ export PREFIX="$N_PREFIX"
 # setopt extended History
  
  
-# History DUplication Options
+ # History DUplication Options
  setopt histFindNoDups
  setopt histSaveNoDups
  
@@ -51,24 +53,12 @@ export PREFIX="$N_PREFIX"
 alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
 alias bbd='brew bundle dump --force --describe'
-alias trail='bat<<<${(F)path}' 
-# trash-cli
-alias rm=trash 
-
+alias trail='bat<<<${(F)path}'
 
 # Customize Prompt(s)
 PROMPT='
  %1~ %L %# '
 RPROMPT='%*'
-
-# Add Location to $path Array
-typeset -U path 
-
-path=(
-  "$N_PREFIX/bin"
-  $path
-  "/snap/bin"
-)
 
 # Write Handy Functions
 function mkcd() {
