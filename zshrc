@@ -59,7 +59,18 @@ PROMPT='
  %1~ %L %# '
 RPROMPT='%*'
 
+<<<<<<< HEAD
   "$N_PREFIX/bin"
+=======
+# Add Location to $path Array
+typeset -U path 
+
+path=(
+  "$N_PREFIX/bin"
+  $path
+  "/snap/bin"
+)
+>>>>>>> main
 
 # Write Handy Functions
 function mkcd() {
