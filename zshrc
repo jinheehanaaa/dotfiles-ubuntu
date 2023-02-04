@@ -1,6 +1,6 @@
 # MY CUSTOM CODE
 echo 'Hello from .zshrc'
-# Enable Powerlevel10k instant prompt. (@the beginning of zshrc)
+# Enable Powerlevel10k instant prompt.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
  fi
@@ -12,10 +12,14 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 eval "$(rbenv init -)"
 
-source /home/jinheehan/.dotfiles/zprofile
+# source /home/jinheehan/.dotfiles/zprofile
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /home/jinheehan/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+
+
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -52,25 +56,26 @@ alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
 alias bbd='brew bundle dump --force --describe'
 alias trail='bat<<<${(F)path}' 
-# trash-cli
 alias rm=trash 
-
-
+alias nvim='/home/linuxbrew/.linuxbrew/bin/nvim'
+alias lua='/home/linuxbrew/.linuxbrew/bin/lua'
 # Customize Prompt(s)
 PROMPT='
  %1~ %L %# '
 RPROMPT='%*'
 
-# Add Location to $path Array
-typeset -U path 
 
-path=(
-  "$N_PREFIX/bin"
-  $path
-  "/snap/bin"
-)
+# Add Location to $PATH Vartiable
+# Add VSCode
+export PATH="$PATH:/snap/bin"
+export PATH="$PATH:$N_PREFIX/bin"
 
 # Write Handy Functions
 function mkcd() {
   mkdir -p "$@" && cd "$_"
 }
+
+  #ln -s $PWD ~/.config/nvim 
+
+
+

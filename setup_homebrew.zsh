@@ -16,12 +16,9 @@ else
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
-
-
 # Snap (Application)
 sudo snap install code
 sudo snap install gitkraken --classic
-
 
 # FOR MACOS ONLY
 # Brew (Package) 
@@ -35,3 +32,4 @@ brew install httpie
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install golang
+brew install neovim
