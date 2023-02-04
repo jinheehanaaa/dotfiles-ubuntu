@@ -1,6 +1,6 @@
 # MY CUSTOM CODE
 echo 'Hello from .zshrc'
-# Enable Powerlevel10k instant prompt.
+# Enable Powerlevel10k instant prompt. (@the beginning of zshrc)
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
  fi
@@ -16,7 +16,6 @@ source /home/jinheehan/.dotfiles/zprofile
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /home/jinheehan/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/powerlevel10k/powerlevel10k.zsh-theme
-
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -59,6 +58,8 @@ alias trail='bat<<<${(F)path}'
 PROMPT='
  %1~ %L %# '
 RPROMPT='%*'
+
+  "$N_PREFIX/bin"
 
 # Write Handy Functions
 function mkcd() {
