@@ -29,5 +29,3 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 # Bash scripts that integrate bat with various command-line tools
 brew "eth-p/software/bat-extras"
-
-
