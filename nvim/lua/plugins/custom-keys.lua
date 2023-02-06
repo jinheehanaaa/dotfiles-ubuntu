@@ -1,10 +1,19 @@
 -- fetch keymap function
 local map = vim.api.nvim_set_keymap
 -- map they key n to run the command :NvimTreeToggle
-map('n', 'n', [[:NvimTreeToggle<CR>]], {})
+map('n', '<leader>`', [[:NvimTreeToggle<CR>]], {})
 
 -- Ctrl+s to save the file
 map('n', '<C-s>', [[:w<CR>]], {})
+
+-- Arrow
+--nnoremap <up> <nop>
+--nnoremap <down> <nop>
+--nnoremap <left> <nop>
+--nnoremap <right> <nop> 
+
+map('n', '<C-c>', [["+y<CR>]], {})
+map('n', '<C-p>', [["+P<CR>]], {})
 
 -- Debugging
 map('n', '<F5>', [[:lua require'dap' .continue()<CR>]], {})
@@ -16,8 +25,10 @@ map('n', 'dl', [[:lua require'dap' .run_last()<CR>]], {}) -- actual: F10
 map('n', 'dt', [[:lua require'dap-go' .debug_test()<CR>]], {}) -- actual: F10
 map('n', '<C-b>', [[:lua require'dap' .toggle_breakpoint()<CR>]],{})
 
+
+
 -- C+d i will debugmode and remove NvimTree
-map('n', '<C-d>', [[:NvimTreeToggle<CR> :lua require'dapui' .toggle()<CR>]],{})
+-- map('n', '<C-d>', [[:NvimTreeToggle<CR> :lua require'dapui' .toggle()<CR>]],{})
 
 -- Press CTRL + l to set Logpoint
 map('n', '<C-l>', [[:lua require'dap' .set_breakpoint(nil,nil, vim.fn.input('Log Point Msg: '))<CR>]], {})

@@ -25,7 +25,7 @@ return require("packer").startup(function()
   -- Productivity
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
-  
+  use 'mbbill/undotree' 
   use { "romgrk/barbar.nvim", wants = "nvim-tree/nvim-web-devicons" } -- https://github.com/romgrk/barbar.nvim
   use "nvim-lualine/lualine.nvim"       -- https://github.com/nvim-lualine/lualine.nvim
   use {

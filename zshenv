@@ -1,4 +1,3 @@
-echo 'Hello from .zshenv'
   # STDIN (Keyboard) = 0
   # STDOUT = 1
   # STDERR = 2

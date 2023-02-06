@@ -8,8 +8,8 @@ vim.cmd([[
 -- local keymap = vim.keymap -- for conciseness
 -- keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
 
-local map = vim.api.nvim_set_keymap 
-map("n", "n", [[:NvimTreeToggle<CR>]], {}) -- toggle file explorer
+--local map = vim.api.nvim_set_keymap 
+--map("n", "C-`", [[:NvimTreeToggle<CR>]], {}) -- toggle file explorer
 
 -- vim.opt.foldmethod = "expr"
 -- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"

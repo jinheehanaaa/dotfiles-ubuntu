@@ -16,3 +16,11 @@ vim.opt.mouse="a"
 vim.opt.clipboard="unnamed"
 vim.opt.scrollbind=false
 vim.opt.wildmenu=true
+
+vim.opt.scrolloff = 8
+vim.opt.signcolumn = "yes"
+vim.opt.isfname:append("@-@")
+
+vim.opt.updatetime = 50
+
+

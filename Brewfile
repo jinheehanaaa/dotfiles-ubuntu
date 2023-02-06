@@ -7,8 +7,6 @@ brew "bat"
 brew "exa"
 # GNU compiler collection
 brew "gcc"
-# Open source programming language to build simple/reliable/efficient software
-brew "go"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Pager program similar to more
