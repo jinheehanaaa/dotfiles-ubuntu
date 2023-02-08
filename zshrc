@@ -1,26 +1,25 @@
-# Enable Powerlevel10k instant prompt.
-#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
- # source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
- #fi
- 
-#typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
-#typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
 # HOMEBREW
-echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/jinheehan/.zprofile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-eval "$(rbenv init -)"
-eval "$(direnv hook zsh)"
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /home/jinheehan/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+# git clone https://github.com/zsh-users/zsh-autosuggestions
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# git clone https://github.com/zsh-users/zsh-completions
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+ if type brew &>/dev/null; then
+     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+     autoload -Uz compinit
+     compinit
+    fi
+
 
 
 
@@ -42,9 +41,6 @@ export PATH=$PATH:/usr/local/go/src
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOPATH/bin
 
-
-
-
 # Minimize program when clicking icon
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
  
@@ -57,6 +53,9 @@ alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
 alias bbd='brew bundle dump --force --describe'
 alias trail='bat<<<${(F)path}'
+alias update='sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade'
+
+
 
 # Customize Prompt(s)
 PROMPT='
@@ -75,6 +74,12 @@ open .
 
 
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source $(brew --prefix powerlevel10k)/powerlevel10k.zsh-theme
+source $(brew --prefix powerlevel10k)/powerlevel10k.zsh-theme
+source $(brew --prefix powerlevel10k)/powerlevel10k.zsh-theme
+source $(brew --prefix powerlevel10k)/powerlevel10k.zsh-theme
 
-
-
+source $(brew --prefix powerlevel10k)/powerlevel10k.zsh-theme
+source $(brew --prefix powerlevel10k)/powerlevel10k.zsh-theme
