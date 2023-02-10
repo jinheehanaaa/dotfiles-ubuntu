@@ -12,12 +12,12 @@ fi
 # brew bundle --verbose
 
 # BREW INSTALL
+brew install n
 brew install bat
-#brew install gcc
-#brew install exa
-#brew install httpie
-#brew install zsh-autosuggestions
-#brew install zsh-syntax-highlighting
+brew install gcc
+brew install exa
+brew install httpie
+brew install zsh-autosuggestions
+brew install zsh-syntax-highlighting
 brew install romkatv/powerlevel10k/powerlevel10k
-echo 'source $(brew --prefix powerlevel10k)/powerlevel10k.zsh-theme' >>! ~/.zshrc
-#brew install golang
+

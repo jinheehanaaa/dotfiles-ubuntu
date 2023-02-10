@@ -1,0 +1,32 @@
+##### CMD FOR PATH #####
+exa /bin
+
+##### ALIAS #####
+trail
+
+##### COMMAND FOR MAINTENANCE #####
+brew outdated
+brew update
+./install
+
+##### System INFO #####
+lspci -v -s $(lspci | grep VGA | cut -d" " -f 1)
+
+##### DOCKER SETUP #####
+sudo snap install docker
+sudo addgroup docker
+sudo adduser $USER docker
+boot
+docker run hello-world
+
+##### PERMISSION #####
+chmod +x test.zsh
+
+##### GIT #####
+git init
+git clone https://github.com/rbenv/rbenv.wiki.git ~/.rbenv
+git status
+git add .
+git log
+git commit -am "Add setup_node.zsh and matching Dotbot command"
+git push
