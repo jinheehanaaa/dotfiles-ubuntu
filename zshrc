@@ -1,27 +1,20 @@
 
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-export ZSH="$HOME/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
-
-
 # HOMEBREW
-echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/jinheehan/.zprofile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+eval "$(rbenv init -)"
+eval "$(direnv hook zsh)"
 
-# git clone https://github.com/zsh-users/zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# git clone https://github.com/zsh-users/zsh-completions
-source ~/.zsh/zsh-completions/zsh-completions.plugin.zsh
+source /home/jinheehan/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
 
 source /etc/zsh_command_not_found
 
@@ -53,6 +46,9 @@ alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
 alias bbd='brew bundle dump --force --describe'
 alias trail='bat<<<${(F)path}'
+alias update='sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade'
+
+
 
 # Customize Prompt(s)
 PROMPT='
@@ -71,8 +67,6 @@ open .
 
 
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source $(brew --prefix powerlevel10k)/powerlevel10k.zsh-theme
-source $(brew --prefix powerlevel10k)/powerlevel10k.zsh-theme
-source $(brew --prefix powerlevel10k)/powerlevel10k.zsh-theme
+
+
+
