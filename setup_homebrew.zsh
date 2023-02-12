@@ -1,6 +1,13 @@
 #!/usr/bin/env zsh
 echo "\n<<< Starting Homebrew Setup >>>\n"
 
+if exists curl; then
+    echo "curl exists, skipping install"
+else
+  echo "brew dosn't exists, continuing with install"
+sudo apt install curl
+fi
+
 if exists brew; then
     echo "brew exists, skipping install"
 else

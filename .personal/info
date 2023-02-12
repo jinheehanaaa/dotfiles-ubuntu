@@ -9,8 +9,10 @@ brew outdated
 brew update
 ./install
 
-##### System INFO #####
+##### System #####
 lspci -v -s $(lspci | grep VGA | cut -d" " -f 1)
+sudo nano /etc/default/grub
+sudo apt remove gnome-shell-extension-ubuntu-dock
 
 ##### DOCKER SETUP #####
 sudo snap install docker
