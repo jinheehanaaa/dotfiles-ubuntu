@@ -42,6 +42,10 @@ export PATH=$PATH:/usr/local/go/src
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOPATH/bin
 
+# Based on "`brew --prefix ruby`/bin"
+export PATH=/home/linuxbrew/.linuxbrew/opt/ruby/bin:$PATH
+export PATH=/home/linuxbrew/.linuxbrew/lib/ruby/gems/3.2.0/bin:$PATH
+
 # SET EXPORTS
 
 

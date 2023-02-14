@@ -1,13 +1,14 @@
-##### CMD FOR PATH #####
-exa /bin
+### Initial Setup After OS INSTALL ###
+https://www.youtube.com/watch?v=5b-xQkRWHjQ&t=879s
 
-##### ALIAS #####
-trail
 
-##### COMMAND FOR MAINTENANCE #####
-brew outdated
-brew update
-./install
+# INSTALL DRACULA FOR GEDIT
+wget https://raw.githubusercontent.com/dracula/gedit/master/dracula.xml
+mkcd /home/jinheehan/.local/share/gedit/styles/
+mv dracula.xml $HOME/.local/share/gedit/styles/
+
+# INSTALL DRACULA FOR gtok
+
 
 ##### System #####
 lspci -v -s $(lspci | grep VGA | cut -d" " -f 1)

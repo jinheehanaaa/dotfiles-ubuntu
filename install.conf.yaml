@@ -7,17 +7,13 @@
 - link:
     ~/.zshrc:
     ~/.zshenv:
-    ~/.gitconfig:
+    #~/.gitconfig:
     ~/.config/bat:
       create: true
       path: config/bat
     ~/.config/nvim:
       create: true
       path: nvim
-
-- create:
-    #- ~/Work
-
 - shell:
     - command: ./setup_core.zsh
       stdout: true

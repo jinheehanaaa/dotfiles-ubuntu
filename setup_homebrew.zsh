@@ -19,6 +19,11 @@ fi
 # brew bundle --verbose
 
 # BREW INSTALL
+brew install protobuf
+brew install clang-format
+brew install sqlite3
+brew install ruby
+gem install rails
 brew install n
 brew install bat
 brew install gcc
