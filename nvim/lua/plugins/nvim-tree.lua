@@ -1,3 +1,7 @@
+-- Reference
+-- https://github.com/josean-dev/dev-environment-files/blob/main/.config/nvim/lua/josean/plugins/nvim-tree.lua
+
+
 local setup, nvimtree = pcall(require, "nvim-tree")
 if not setup then return end
 
@@ -8,22 +12,23 @@ vim.cmd([[
 -- local keymap = vim.keymap -- for conciseness
 -- keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
 
---local map = vim.api.nvim_set_keymap 
---map("n", "C-`", [[:NvimTreeToggle<CR>]], {}) -- toggle file explorer
-
 -- vim.opt.foldmethod = "expr"
 -- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 -- vim.opt.foldenable = false --                  " Disable folding at startup.
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+--vim.opt.termguicolors = true
 
-vim.opt.termguicolors = true
+-- change color for arrows in tree to light blue
+vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
 
 local HEIGHT_RATIO = 0.8 -- You can change this
 local WIDTH_RATIO = 0.5  -- You can change this too
 
 nvimtree.setup({
+
+
   disable_netrw = true,
   hijack_netrw = true,
   respect_buf_cwd = true,

@@ -11,14 +11,19 @@
     ~/.config/bat:
       create: true
       path: config/bat
-
-- create:
-    #- ~/Work
-
+    ~/.config/nvim:
+      create: true
+      path: nvim
 - shell:
+    - command: ./setup_core.zsh
+      stdout: true
+      stderr: true
     - command: ./setup_homebrew.zsh
       stdout: true
       stderr: true
+    #- command: ./setup_snap.zsh
+    #  stdout: true
+    #  stderr: true
     - command: ./setup_zsh.zsh
       stdout: true
       stderr: true

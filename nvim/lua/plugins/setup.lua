@@ -25,7 +25,7 @@ return require("packer").startup(function()
   -- Productivity
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
-  use 'mbbill/undotree' 
+  use 'mbbill/undotree'
   use { "romgrk/barbar.nvim", wants = "nvim-tree/nvim-web-devicons" } -- https://github.com/romgrk/barbar.nvim
   use "nvim-lualine/lualine.nvim"       -- https://github.com/nvim-lualine/lualine.nvim
   use {
@@ -34,6 +34,10 @@ return require("packer").startup(function()
       "nvim-tree/nvim-web-devicons",    -- https://github.com/nvim-tree/nvim-web-devicons
     },
   }
+  use("christoomey/vim-tmux-navigator") -- Split leader + sv, sh & Ctrl + h,j,k,l
+  use("szw/vim-maximizer") -- maximizes and restores current windows
+
+
   use {
     "nvim-telescope/telescope-fzf-native.nvim", -- https://github.com/nvim-telescope/telescope-fzf-native.nvim
     run = "make",
@@ -56,17 +60,29 @@ return require("packer").startup(function()
     run = ":TSUpdate"
   }
   use "nvim-treesitter/nvim-treesitter-textobjects" -- https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+
+  use("windwp/nvim-autopairs")
+  use("windwp/nvim-ts-autotag")
+
   use "rhysd/vim-clang-format"              -- https://github.com/rhysd/vim-clang-format
   use "fatih/vim-go"                        -- https://github.com/fatih/vim-go
+  use "L3MON4D3/LuaSnip"
+  use "saadparwaiz1/cmp_luasnip"
+  use "rafamadriz/friendly-snippets"
   use "SirVer/ultisnips"                    -- https://github.com/sirver/UltiSnips
   use "hrsh7th/cmp-nvim-lsp"                -- https://github.com/hrsh7th/cmp-nvim-lsp
-  use "hrsh7th/nvim-cmp"                    -- https://github.com/hrsh7th/nvim-cmp
+  use ({"glepnir/lspsaga.nvim", branch ="main"})
+  use("jose-elias-alvarez/typescript.nvim")
+  use "hrsh7th/nvim-cmp"                    -- Auto-completion
+  use "hrsh7th/cmp-path"                    -- Recommend Auto-completion based on different path
   use "neovim/nvim-lspconfig"               -- https://github.com/neovim/nvim-lspconfig
   use "onsails/lspkind-nvim"                -- https://github.com/onsails/lspkind-nvim
   use "quangnguyen30192/cmp-nvim-ultisnips" -- https://github.com/quangnguyen30192/cmp-nvim-ultisnips
   use "williamboman/nvim-lsp-installer"     -- https://github.com/williamboman/nvim-lsp-installer
   use "numToStr/Comment.nvim"               -- https://github.com/numToStr/Comment.nvim
   use { "kylechui/nvim-surround", tag = "*" }  -- https://github.com/kylechui/nvim-surround
+  use ("tpope/vim-surround") --ysw" & ds" for surround
+  use ("vim-scripts/ReplaceWithRegister") -- replace with other word, yw(source) -> grw(dest)
 
 -- Debugging
 use 'mfussenegger/nvim-dap'
