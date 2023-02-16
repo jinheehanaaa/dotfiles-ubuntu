@@ -83,3 +83,6 @@ source $(brew --prefix powerlevel10k)/powerlevel10k.zsh-theme
 
 source $(brew --prefix powerlevel10k)/powerlevel10k.zsh-theme
 source $(brew --prefix powerlevel10k)/powerlevel10k.zsh-theme
+source $(brew --prefix powerlevel10k)/powerlevel10k.zsh-theme
+source $(brew --prefix powerlevel10k)/powerlevel10k.zsh-theme
+source $(brew --prefix powerlevel10k)/powerlevel10k.zsh-theme

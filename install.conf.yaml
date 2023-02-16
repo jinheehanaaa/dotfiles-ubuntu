@@ -7,7 +7,7 @@
 - link:
     ~/.zshrc:
     ~/.zshenv:
-    ~/.gitconfig:
+    #~/.gitconfig:
     ~/.config/bat:
       create: true
       path: config/bat
@@ -16,9 +16,9 @@
     #- ~/Work
 
 - shell:
-    #- command: ./setup_homebrew.zsh
-    #  stdout: true
-    #  stderr: true
+    - command: ./setup_homebrew.zsh
+      stdout: true
+      stderr: true
     - command: ./setup_zsh.zsh
       stdout: true
       stderr: true
