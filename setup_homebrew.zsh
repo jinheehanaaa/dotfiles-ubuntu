@@ -26,7 +26,7 @@ brew install protobuf
 #gem install rails
 #brew install n
 #brew install bat
-##brew install gcc
+#brew install gcc
 brew install exa
 #brew install httpie
 brew install zsh-autosuggestions

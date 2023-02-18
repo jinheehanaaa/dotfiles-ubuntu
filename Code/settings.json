@@ -84,9 +84,8 @@
     "terminal.integrated.fontWeight": "300",
     "terminal.integrated.fontWeightBold": "300",
     "workbench.fontAliasing": "antialiased",
-    "editor.fontFamily": "Iosevka Custom",
-    "terminal.integrated.fontFamily": "Iosevka Custom Extended",
-
+    //"terminal.integrated.fontFamily": "Iosevka Custom Extended",
+    "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
     "explorer.compactFolders": false,
 
     "files.trimTrailingWhitespace": true,
@@ -112,8 +111,6 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
 
     "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
-
-    "workbench.activityBar.visible": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
 
     // Use vim hjkl to navigate folders.
@@ -183,3 +180,4 @@
     "workbench.colorTheme": "Gruvbox Dark Hard",
     "window.zoomLevel": 1
   }
+
