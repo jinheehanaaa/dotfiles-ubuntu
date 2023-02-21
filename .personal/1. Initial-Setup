@@ -1,42 +1,35 @@
-# temporary
-
-
+########## CORE SETUP ##########
 sudo apt install curl
 sudo apt install zsh
 sudo apt install git
-
+sudo apt install direnv
+chsh -s /bin/zsh
+MANUALLY INSTALL NERD FONT 
+CHANGE TERMINAL FONT
 git config --global user.name "Jinhee Han"
 git config --global user.email "80008300+jinheehanaaa@users.noreply.github.com"
 cat .gitconfig
-
-
 ssh-keygen -t ed25519 -C "80008300+jinheehanaaa@users.noreply.github.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 cat ~/.ssh/id_ed25519.pub
 MANUALLY ADD PUB KEY INTO GITHUB ACCOUNT
-
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICneOEUsOWwUrnmT5GjCc5g4IbwsCth4bYkmFKoKYqAs 80008300+jinheehanaaa@users.noreply.github.com
 ssh -T git@github.com
-
-
 git clone git@github.com:jinheehanaaa/dotfiles-ubuntu.git
 
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.dotfiles/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
+p10k configure
 
-
-
-
- echo '/usr/bin/zsh' | sudo tee -a '/etc/shells'
-
-sudo nano /etc/apt/sources.list
-
-sudo cp /usr/share/doc/apt/examples/sources.list /etc/apt/sources.list
-
-
-sudo apt remove gnome-shell-extension-ubuntu-dock
-
-
+########## DEV MAIN ##########
+sudo apt install gitkraken
+sudo apt install gcc
+sudo apt install clang
+sudo apt install --classic code
+sudo apt install libx11-dev libxkbcommon-x11-dev
 
 
 

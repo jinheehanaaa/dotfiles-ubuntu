@@ -2,4 +2,4 @@
 
 echo "\n<<< Starting ZSH Setup >>>\n"
 
-chsh -s /bin/zsh
+sudo chsh -s /bin/zsh

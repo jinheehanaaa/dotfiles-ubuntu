@@ -7,6 +7,7 @@
 - link:
     ~/.zshrc:
     ~/.zshenv:
+    ~/.zshalias:
     #~/.gitconfig:
     ~/.config/bat:
       create: true
@@ -17,6 +18,9 @@
     ~/.config/Code/User/settings.json:
       create: true
       path: Code/settings.json
+    ~/.themes/Gtk-master/gnome-shell/gnome-shell.css:
+      create: true
+      path: themes/Gtk-master/gnome-shell/gnome-shell.css     
 - shell:
     - command: ./setup_core.zsh
       stdout: true
@@ -30,9 +34,7 @@
     - command: ./setup_zsh.zsh
       stdout: true
       stderr: true
-    #- command: ./setup_zsh.zsh
-    #  stdout: true
-    #  stderr: true
-    #- command: ./setup_node.zsh
-    #  stdout: true
-    #  stderr: true
+    - command: ./setup_node.zsh
+      stdout: true
+      stderr: true
+

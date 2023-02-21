@@ -8,3 +8,5 @@ func main() {
 	fmt.Println(value)
 	fmt.Println(value)
 }
+
+// dw for DELETE WORD

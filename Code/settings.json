@@ -77,7 +77,7 @@
     "editor.renderLineHighlight": "all",
 
     // font settings
-    "editor.fontSize": 16.5,
+    "editor.fontSize": 16,
     "editor.fontWeight": "400",
     "editor.fontLigatures": true,
     "terminal.integrated.fontSize": 16.5,
@@ -85,7 +85,7 @@
     "terminal.integrated.fontWeightBold": "300",
     "workbench.fontAliasing": "antialiased",
     //"terminal.integrated.fontFamily": "Iosevka Custom Extended",
-    "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+    "terminal.integrated.fontFamily": "monospace, MesloLGM Nerd Font",
     "explorer.compactFolders": false,
 
     "files.trimTrailingWhitespace": true,
@@ -178,6 +178,17 @@
       "editor.defaultFormatter": "raczzalan.webgl-glsl-editor"
     },
     "workbench.colorTheme": "Gruvbox Dark Hard",
-    "window.zoomLevel": 1
+    "git.openRepositoryInParentFolders": "never",
+    "[go]": {
+      "editor.defaultFormatter": "golang.go"
+    },
+    "markdown.extension.extraLangIds": [],
+    "explorer.confirmDelete": false,
+    "cmake.configureOnOpen": true,
+    "explorer.confirmDragAndDrop": false,
+    "vsintellicode.features.python.deepLearning": "enabled",
+    "tabnine.experimentalAutoImports": true,
+    "window.zoomLevel": 1,
+    "tabnine.disableFileRegex": []
   }
 

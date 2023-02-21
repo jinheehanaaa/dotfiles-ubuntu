@@ -1,0 +1,40 @@
+#!/bin/zsh
+
+#############################
+########## ALIASES ##########
+#############################
+alias Jinhee-Han='echo "This is Jinhee Han"'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias la='exa -laFh --git'
+alias exa='exa -laFh --git'
+alias bbd='brew bundle dump --force --describe'
+alias trail='bat<<<${(F)path}'
+alias update='sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade && sudo apt autoremove'
+alias instance='sudo lsof -i -P'
+
+##### SYSTEM #####
+alias timezone='timedatectl list-timezones'
+alias settx='sudo timedatectl set-timezone America/Chicago'
+alias setny='sudo timedatectl set-timezone America/New_York'
+alias setla='sudo timedatectl set-timezone America/Los_Angeles'
+alias setko='sudo timedatectl set-timezone Asia/Seoul'
+alias setja='sudo timedatectl set-timezone Asia/Tokyo'
+alias sources.list='sudo nano /etc/apt/sources.list'
+alias gpu='lspci | grep -i vga' 
+alias gpu-detail='lspci -v -s $(lspci | grep VGA | cut -d" " -f 1)'
+alias grub='sudo nano /etc/default/grub'
+alias motherboard='cat /sys/devices/virtual/dmi/id/board_{vendor,name,version}'
+alias motherboard-detail='sudo dmidecode -t baseboard'
+alias cpu-unit='cat /proc/cpuinfo | grep processor | wc -l'
+alias cpu-model='cat /proc/cpuinfo | grep '\''model name'\'' | uniq'
+alias cpu-full='sudo dmidecode --type processor'
+alias cpu-detail='lshw -C CPU'
+alias cpu='cat /proc/cpuinfo | grep '\''model name'\'' | uniq'
+alias filesystem='lshw -short -C disk'
+alias memory='free -h'
+alias ram='free -h'
+alias myip='ip addr show | grep inet | grep -v inet6 | awk '\''{print $2}'\'''
+
+
+
