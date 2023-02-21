@@ -4,9 +4,8 @@ local keymap = vim.keymap
 
 -- NAVIGATION
 map('n', '<leader>e', [[:NvimTreeToggle<CR>]], {})
--- keymap.set("n","n", ":NvimTreeToggle<CR>")
 
-keymap.set("n", "<leader>nh", ":nohl<CR>")
+keymap.set("n", "<leader>nh", ":nohl<CR>") -- Clear search highlight
 keymap.set("n", "x", '"_x')
 
 

@@ -1,0 +1,8 @@
+
+
+brew install tor
+service tor start or brew services start tor
+netstat -antp|grep tor 
+
+
+http://dnsleaktest.com/

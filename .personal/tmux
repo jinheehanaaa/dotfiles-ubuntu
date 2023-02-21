@@ -1,0 +1,8 @@
+##### BIND #####
+- MASTER: CTRL + A
+- MASTER + -, MASTER + |
+- MASTER + h,j,k, or k for resizing
+- MASTER + Arrow for changing shell
+- MASTER + $ for renaming session
+- MASTER+ c for creating new window
+- MASTER + , for renaming current window

@@ -1,0 +1,25 @@
+##### UBUNTU THEME & MORE #####
+https://www.youtube.com/watch?v=5b-xQkRWHjQ&t=879s
+
+##### DOCKER SETUP #####
+sudo snap install docker
+sudo addgroup docker
+sudo adduser $USER docker
+boot
+docker run hello-world
+
+##### PERMISSION #####
+chmod +x test.zsh
+
+##### GIT QUICK TUTORIAL #####
+git init
+git clone https://github.com/rbenv/rbenv.wiki.git ~/.rbenv
+git status
+git add .
+git log
+git commit -am "Add setup_node.zsh and matching Dotbot command"
+git push
+
+##### xmonad #####
+- sudo apt install xmonad libghc-xmonad-contrib-dev
+
